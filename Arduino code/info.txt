@@ -1,1 +1,509 @@
 Zet hier de arduino code
+
+int L1 = 10;
+int L2 = 9;
+int L3 = 8;
+int L4 = 7;
+int L5 = 6;
+int L6 = 5;
+int L7 = 4;
+
+int buttonPin = 2;
+
+int de = 100;
+
+int p = 0;
+
+int buttonState = 0;
+
+void setup() {
+
+  pinMode(L1, OUTPUT);
+  pinMode(L2, OUTPUT);
+  pinMode(L3, OUTPUT);
+  pinMode(L4, OUTPUT);
+  pinMode(L5, OUTPUT);
+  pinMode(L6, OUTPUT);
+  pinMode(L7, OUTPUT);
+
+  pinMode(buttonPin, INPUT);
+
+  digitalWrite(L1, HIGH);
+  digitalWrite(L2, HIGH);
+  digitalWrite(L3, HIGH);
+  digitalWrite(L4, HIGH);
+  digitalWrite(L5, HIGH);
+  digitalWrite(L6, HIGH);
+  digitalWrite(L7, HIGH);
+  delay(5000);
+
+}
+
+void loop() {
+  buttonState = digitalRead(buttonPin);
+
+  if (buttonState == HIGH) {
+    p++;
+    delay(1000);
+    if (p == 7) {
+      p = 1;
+    }
+  }
+  if (p == 1) {
+    digitalWrite(L1, 1);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 1);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 1);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 1);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 1);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 1);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+    digitalWrite(L1, 1);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 1);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 1);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 1);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 1);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 1);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 1);
+    delay(de);
+
+  } if (p == 2) {
+    digitalWrite(L1, 1);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 1);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 1);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 1);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 1);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 1);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+    digitalWrite(L1, 1);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 1);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 1);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 1);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 1);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 1);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 1);
+    delay(de);
+
+  }
+  if (p == 3) {
+    digitalWrite(L1, 1);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 1);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 1);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 1);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 1);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 1);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 1);
+    delay(de);
+
+  } if (p == 4) {
+    digitalWrite(L1, 1);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 1);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 1);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 1);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 1);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 1);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 1);
+    delay(de);
+
+  } if (p == 5) {
+    digitalWrite(L1, 1);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 1);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 1);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 1);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 1);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 1);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 1);
+    delay(de);
+
+  } if (p == 6) {
+    digitalWrite(L1, 1);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 1);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 1);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 1);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 1);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 1);
+    digitalWrite(L7, 0);
+    delay(de);
+
+    digitalWrite(L1, 0);
+    digitalWrite(L2, 0);
+    digitalWrite(L3, 0);
+    digitalWrite(L4, 0);
+    digitalWrite(L5, 0);
+    digitalWrite(L6, 0);
+    digitalWrite(L7, 1);
+    delay(de);
+
+  }
+
+}
